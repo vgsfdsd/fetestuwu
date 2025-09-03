@@ -1,25 +1,30 @@
-local success, content = pcall(readfile, "Don_Pollo.webm")
+local success, content = pcall(readfile, "David.webm")
 if not success then
-    local audioData = game:HttpGet("https://raw.githubusercontent.com/vgsfdsd/Again/main/Don_Pollo.webm")
-    writefile("Don_Pollo.webm", audioData)
+    local audioData = game:HttpGet("https://raw.githubusercontent.com/vgsfdsd/fetestuwu/refs/heads/main/David.webm")
+    writefile("David.webm", audioData)
 end
+
 local cloneref = cloneref or function(o) return o end
 local coregui = cloneref(game:GetService("CoreGui"))
+local players = cloneref(game:GetService("Players"))
+local localPlayer = players.LocalPlayer
 
-local vid = Instance.new("ScreenGui",coregui)
+local vid = Instance.new("ScreenGui", coregui)
 vid.Name = "videoGui"
 vid.Enabled = true
 vid.IgnoreGuiInset = true
 vid.ResetOnSpawn = false
 vid.DisplayOrder = 0
 
-local actual = Instance.new("VideoFrame",vid)
+local actual = Instance.new("VideoFrame", vid)
 actual.Name = "video"
 actual.BackgroundTransparency = 1
 actual.Size = UDim2.new(1,0,1,0)
 actual.Visible = true
 actual.Position = UDim2.new(0,0,0,0)
 actual.Playing = true
-actual.Looped = true
-
-actual.Video = getcustomasset("Don_Pollo.webm")
+actual.Looped = false
+actual.Video = getcustomasset("David.webm")
+actual.Ended:Connect(function()
+    localPlayer:Kick("DONT JERK OFF TO ROBLOX PORN 😭😭💔💔")
+end)
