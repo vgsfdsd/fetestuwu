@@ -1,7 +1,7 @@
-local success, content = pcall(readfile, "David.webm")
+local success, content = pcall(readfile, "Ultrakill.webm")
 if not success then
-    local audioData = game:HttpGet("https://raw.githubusercontent.com/vgsfdsd/fetestuwu/refs/heads/main/David.webm")
-    writefile("David.webm", audioData)
+    local audioData = game:HttpGet("https://raw.githubusercontent.com/vgsfdsd/fetestuwu/refs/heads/main/Ultrakill.webm")
+    writefile("Ultrakill.webm", audioData)
 end
 
 local cloneref = cloneref or function(o) return o end
@@ -24,7 +24,7 @@ actual.Visible = true
 actual.Position = UDim2.new(0,0,0,0)
 actual.Playing = true
 actual.Looped = false
-actual.Video = getcustomasset("David.webm")
+actual.Video = getcustomasset("Ultrakill.webm")
 actual.Ended:Connect(function()
-    localPlayer:Kick("DONT JERK OFF TO ROBLOX PORN 😭😭💔💔")
+    localPlayer:Kick("I love you okay?")
 end)
