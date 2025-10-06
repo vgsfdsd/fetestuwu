@@ -1,6 +1,6 @@
 local success, content = pcall(readfile, "BroLearnedFromUltrakill.webm")
 if not success then
-    local audioData = game:HttpGet("https://raw.githubusercontent.com/vgsfdsd/fetestuwu/refs/heads/main/BroLearnedFromUltrakill.webm")
+    local audioData = game:HttpGet("https://raw.githubusercontent.com/vgsfdsd/fetestuwu/main/BroLearnedFromUltrakill.webm")
     writefile("BroLearnedFromUltrakill.webm", audioData)
 end
 
